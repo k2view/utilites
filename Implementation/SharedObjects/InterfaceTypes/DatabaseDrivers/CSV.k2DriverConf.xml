@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JdbcDriverConf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>CSV</Name>
+  <ClassName>org.relique.jdbc.csv.CsvDriver</ClassName>
+  <UrlTemplate>jdbc:relique:csv:[HOST]?separator&#x3D;,&amp;fileExtension&#x3D;.csv</UrlTemplate>
+  <DefaultPort xsi:nil="true" />
+  <PoolEnabled>true</PoolEnabled>
+  <ValidationQuery>select 1</ValidationQuery>
+  <TestOnReturn>false</TestOnReturn>
+  <InitSql><![CDATA[]]></InitSql>
+  <InterceptorStatementCache>false</InterceptorStatementCache>
+  <InterceptorConnectionState>false</InterceptorConnectionState>
+  <InterceptorResetAbandonedTimer>false</InterceptorResetAbandonedTimer>
+  <MinEvictableIdleTimeMillis>60000</MinEvictableIdleTimeMillis>
+  <DynamicJars>true</DynamicJars>
+  <SupportsImplicitConversions>true</SupportsImplicitConversions>
+  <SupportsNestedQueries>true</SupportsNestedQueries>
+  <SupportsConditionalOr>true</SupportsConditionalOr>
+  <SupportsDistinctClause>true</SupportsDistinctClause>
+  <EnclosureStartCharacter>&quot;</EnclosureStartCharacter>
+  <EnclosureEndCharacter>&quot;</EnclosureEndCharacter>
+  <AliasAfterInnerQuery>AS ALIAS1</AliasAfterInnerQuery>
+  <BindingVariableSign>?</BindingVariableSign>
+  <BindingRequiresColumn></BindingRequiresColumn>
+  <BindingVariableSuffixStr></BindingVariableSuffixStr>
+  <MetadataQueryTablesList><![CDATA[]]></MetadataQueryTablesList>
+  <MetadataQueryColumnsList><![CDATA[]]></MetadataQueryColumnsList>
+  <MetadataQueryFksList><![CDATA[]]></MetadataQueryFksList>
+  <MetadataQueryPksList><![CDATA[]]></MetadataQueryPksList>
+  <ConnectionProperties>
+  </ConnectionProperties>
+</JdbcDriverConf>
