@@ -2,7 +2,7 @@
 <JdbcDriverConf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Name>CSV</Name>
   <ClassName>org.relique.jdbc.csv.CsvDriver</ClassName>
-  <UrlTemplate>jdbc:relique:csv:[HOST]?separator&#x3D;,&amp;fileExtension&#x3D;.csv</UrlTemplate>
+  <UrlTemplate>jdbc:relique:csv:[DATABASE]?separator&#x3D;,&amp;fileExtension&#x3D;.csv</UrlTemplate>
   <DefaultPort xsi:nil="true" />
   <PoolEnabled>true</PoolEnabled>
   <ValidationQuery>select 1</ValidationQuery>
