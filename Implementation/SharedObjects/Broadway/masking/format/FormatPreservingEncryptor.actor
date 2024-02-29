@@ -1,0 +1,67 @@
+{
+    "type": "FormatPreservingEncryptor",
+    "badge": "FPE",
+    "actorClass": "com.k2view.broadway.actors.masking.format.FormatPreservingEncryption",
+    "tags": [
+        "masking"
+    ],
+    "doc": [
+        "This actor encrypts input value using the FF3 algorithm for Format Preserving Encryption as described in the March 2016 NIST publication 800-38G Methods for Format-Preserving Encryption, and revised on February 28th, 2019 with a draft update for FF3-1."
+    ],
+    "inputs": [
+        {
+            "name": "whiteListCharacters",
+            "schema": {
+                "type": "string"
+            },
+            "doc": [
+                "The characters that will be collected from the input value to encrypt, other characters will be kept as value format."
+            ]
+        },
+        {
+            "name": "action",
+            "schema": {
+                "type": "string"
+            },
+            "const": "encrypt",
+            "hidden": true,
+            "editor": {
+                "id": "com.k2view.dropdown",
+                "options": [
+                    "encrypt",
+                    "decrypt"
+                ]
+            },
+            "doc": [
+                "The action will be performed for the input value."
+            ]
+        },
+        {
+            "name": "value",
+            "schema": {
+                "type": "string"
+            },
+            "doc": [
+                "The string value will be encrypted."
+            ]
+        }
+    ],
+    "outputs": [
+        {
+            "name": "value",
+            "schema": {},
+            "doc": [
+                "Encrypted value."
+            ]
+        },
+        {
+            "name": "format",
+            "schema": {
+                "type": "array"
+            },
+            "doc": [
+                "Encrypted value."
+            ]
+        }
+    ]
+}
