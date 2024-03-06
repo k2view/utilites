@@ -13,7 +13,7 @@
         "/opt/apps/fabric/workspace/fabric/lib/fabric/fabric-parser*.jar",
         "/opt/apps/fabric/workspace/fabric/lib/fabric/fabricdb*.jar",
         "/opt/apps/fabric/workspace/fabric/lib/fabric/broadway*.jar",
-		"/opt/apps/fabric/workspace/fabric/lib/fabric/graphit*.jar",
+		"/opt/apps/fabric/workspace/fabric/lib/fabric/graphit*.jar",        
         "/opt/apps/fabric/workspace/fabric/lib/provided/*.jar",
         "lib/*.jar"
     ],
@@ -107,5 +107,7 @@
 		}
 	},
 	"terminal.integrated.defaultProfile.linux": "bash",
-	"redhat.telemetry.enabled": false	
+    "redhat.telemetry.enabled": false,
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx8G -Xms100m -Xlog:disable"
 }
