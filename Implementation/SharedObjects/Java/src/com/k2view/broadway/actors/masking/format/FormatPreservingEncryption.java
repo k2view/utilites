@@ -6,13 +6,31 @@ import com.k2view.broadway.model.Context;
 import com.k2view.broadway.model.Data;
 import com.k2view.broadway.util.CalculateOnChange;
 import com.k2view.fabric.common.Util;
-import com.k2view.fabric.common.encryption.Base64;
-import com.k2view.fabric.common.encryption.Hasher;
+
+import java.lang.reflect.Method;
+import java.util.Base64;
 
 public class FormatPreservingEncryption implements Actor {
 
     private static final String FF3_TWEAK = "CBD09280979564";
-    private static final String FF3_KEY = Base64.encode(Hasher.strongest(true).hash(FF3_TWEAK.getBytes())).substring(0, 32);
+    private static final String FF3_KEY;
+    static {
+        try {
+            Class<?> hasherClass = Class.forName("com.k2view.fabric.common.encryption.Hasher");
+
+            Method getHasherMethod = hasherClass.getDeclaredMethod("strongest", boolean.class);
+            Object hasher = getHasherMethod.invoke(hasherClass, true);
+
+            Method hashMethod = hasherClass.getDeclaredMethod("hash", String[].class);
+            Object hash = hashMethod.invoke(hasher, new Object[] {new String[] {FF3_TWEAK}});
+
+            FF3_KEY = Base64.getEncoder().encodeToString((byte[]) hash).substring(0, 32);
+        } catch (Exception e) {
+            throw new RuntimeException("Can't create FF3 key using Fabric hasher.", e);
+        }
+
+    }
+
     private static final String ALPHABET = ("0123456789" +
             "abcdefghijklmnopqrstuvwxyz" +
             "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
