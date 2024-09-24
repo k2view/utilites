@@ -8,5 +8,5 @@ These actora encrypts/decrypts input value using the FF3 algorithm for Format Pr
 
 
 ### License
-[Open license file](/api/k2view/format-preserving-encryption-actors/0.0.1/file/LICENSE.txt)
+[Open license file](/api/k2view/format-preserving-encryption-actors/1.0.0/file/LICENSE.txt)
 

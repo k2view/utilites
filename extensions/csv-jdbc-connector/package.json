@@ -3,8 +3,8 @@
     "displayName": "CSV JDBC Connector",
     "description": "A read-only JDBC driver that exposes CSV files as database tables.",
     "publisher": "K2View",
-    "version": "0.0.5",
-    "preview": true,
+    "version": "1.0.0",
+    "preview": false,
     "engines": {
         "vscode": "^1.79.0"
     },
