@@ -14,3 +14,11 @@ Additionally, you have the flexibility to set various parameters, including the 
 JDBC Driver Source Code can be found [here](https://github.com/simoc/csvjdbc).
 
 Full documentation for the CSV JDBC driver can be found [here](https://github.com/simoc/csvjdbc/blob/master/docs/doc.md).
+
+## Changelog
+
+### 1.0.1:
+- Upgrade the underlying JDBC driver to 1.0.46 to fix connection pooling issue.
+
+### 1.0.0:
+- Initial Version
