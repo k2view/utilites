@@ -3,7 +3,7 @@
     "displayName": "Format Preserving Encryption Actors",
     "description": "FF3 algorithm Format Preserving Encryption & Decryption actors",
     "publisher": "K2View",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "preview": false,
     "engines": {
         "vscode": "^1.79.0"
