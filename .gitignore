@@ -21,3 +21,5 @@ LocalDeploy
 LocalDeployWeb
 extensions/*/artifacts
 extensions/*/templates
+.project
+.classpath
