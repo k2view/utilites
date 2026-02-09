@@ -18,11 +18,7 @@
         "lib/*.jar"
     ],
     "java.project.outputPath": ".studioWeb/java/bin",
-    "java.project.sourcePaths": [
-		"Implementation/SharedObjects/Java/src",	
-		"Implementation/LogicalUnits/k2_ws/Java/src",	
-		"Implementation/LogicalUnits/k2_ref/Java/src"	
-	],
+    "java.project.sourcePaths": [],
 	"java.project.resourceFilters": [
         "node_modules",
         ".git",
